@@ -22,7 +22,7 @@ int parse_int(char*);
  * The function is expected to return an INTEGER.
  * The function accepts 2D_INTEGER_ARRAY arr as parameter.
  */
-
+# Main code starts...
 int hourglassSum(int arr_rows, int arr_columns, int** arr) {
     int hourGlassSumArray[(arr_columns*arr_rows)/2],i,j,sum,maximum,k=0;
     for(i=1;i<(arr_rows-1);i++){
@@ -40,7 +40,7 @@ int hourglassSum(int arr_rows, int arr_columns, int** arr) {
     }
     return maximum;
 }
-
+# main code ends...
 int main()
 {
     FILE* fptr = fopen(getenv("OUTPUT_PATH"), "w");
